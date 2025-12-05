@@ -1,87 +1,43 @@
-/* Общие стили */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: linear-gradient(270deg, #ffe4e1, #fff0f5, #fbc2eb);
+  background: linear-gradient(270deg, #6a0dad, #8a2be2, #9370db);
   background-size: 600% 600%;
   animation: gradient 15s ease infinite;
-  color: #333;
+  color: #fff;
   text-align: center;
 }
 
-/* Шапка */
 .hero {
   padding: 100px 20px;
-  background: url('images/background.jpg') no-repeat center/cover;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-}
-
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  animation: fadeInDown 2s ease-out;
-}
-
-.subtitle {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-  animation: fadeIn 3s ease-in;
+  background: url('minecraft-bg.png') no-repeat center/cover;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 .cta {
   display: inline-block;
   padding: 15px 30px;
-  background: crimson;
+  background: #8a2be2;
   color: white;
+  border-radius: 10px;
   text-decoration: none;
-  border-radius: 30px;
-  font-size: 1.2em;
-  transition: background 0.3s, transform 0.3s;
+  transition: transform 0.3s;
 }
+.cta:hover { transform: scale(1.1); }
 
-.cta:hover {
-  background: darkred;
-  transform: scale(1.1);
-}
+.section { padding: 60px 20px; }
 
-/* Разделы */
-.section {
-  padding: 60px 20px;
-}
-
-.section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: crimson;
-  text-shadow: 0 0 10px rgba(220,20,60,0.7),
-               0 0 20px rgba(220,20,60,0.5);
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-/* Галерея */
 .gallery {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
 }
-
 .gallery img {
-  width: 250px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s, opacity 1s;
-  opacity: 0;
-  animation: fadeInImg 2s forwards;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* Сюрприз */
 .heart-btn {
   font-size: 50px;
   background: none;
@@ -93,35 +49,14 @@ body {
 .secret {
   margin-top: 20px;
   padding: 20px;
-  background: #fff0f5;
+  background: rgba(255,255,255,0.2);
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   font-size: 1.2em;
 }
 
-/* Подвал */
 .footer {
-  background: crimson;
-  color: white;
+  background: #4b0082;
   padding: 20px;
-  margin-top: 40px;
-}
-
-/* Анимации */
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-50px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
 }
 
 @keyframes gradient {
@@ -129,13 +64,8 @@ body {
   50% {background-position:100% 50%;}
   100% {background-position:0% 50%;}
 }
-
-@keyframes glow {
-  from { text-shadow: 0 0 5px crimson; }
-  to   { text-shadow: 0 0 20px pink; }
-}
-
-@keyframes fadeInImg {
-  from { opacity: 0; transform: scale(0.9); }
-  to   { opacity: 1; transform: scale(1); }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }
