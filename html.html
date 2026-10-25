@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>С Днём Рождения, Наталья! 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Наталья, с Днём Рождения! 🎂💕</h1>
+    <p>Ты — моё счастье, моя радость и моя любовь. Сегодня я хочу сказать тебе, как сильно ты для меня значишь.</p>
+  </header>
+
+  <div class="content">
+    <div class="card">
+      <h2>💌 Поздравление</h2>
+      <p>
+        Дорогая Наталья, каждый миг с тобой — это чудо.
+        Ты наполняешь мою жизнь светом и теплом.
+        Пусть твой день рождения будет таким же ярким, как твоя улыбка,
+        и таким же нежным, как твоя душа.
+        Я люблю тебя бесконечно и хочу радовать тебя каждый день. 💖
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🎮 Поймай сердечко</h2>
+      <p>Нажимай на падающие сердечки, чтобы набрать очки!</p>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <p id="score">Очки: 0</p>
+    </div>
+
+    <div class="card">
+      <h2>💖 Викторина о нашей любви</h2>
+      <p>Ответь на вопросы и узнай, сколько романтики мы накопили!</p>
+
+      <div id="quiz">
+        <p>1. Где мы впервые встретились?</p>
+        <button onclick="checkAnswer(1, 'правильно')">На мт 🌳</button>
+        <button onclick="checkAnswer(1, 'неправильно')">В тележке 🛒</button>
+
+        <p>2. Как я называю тебя чаще всего?</p>
+        <button onclick="checkAnswer(2, 'правильно')">Пууууууууууупся 👑</button>
+        <button onclick="checkAnswer(2, 'неправильно')">Соседка 😅</button>
+
+        <p>3. Что я чувствую к тебе?</p>
+        <button onclick="checkAnswer(3, 'правильно')">Любовь бесконечную 💕</button>
+        <button onclick="checkAnswer(3, 'неправильно')">Голод 🍔</button>
+      </div>
+
+      <p id="quizResult"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>С любовью, твой Максим 💖</p>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
